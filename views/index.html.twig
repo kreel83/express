@@ -1,0 +1,16 @@
+{% extends 'layout.html.twig' %}
+
+
+{% block body %}
+<h1>Coucou les gens !</h1>
+<h2>coucou</h2>
+<table class="table table-bordered">
+{% for cat in categories %}
+<tr>
+<td>{{cat.id}}</td>
+<td>{{cat.nom}}</td>
+</tr>
+{% endfor %}
+</table>
+
+{% endblock %}
